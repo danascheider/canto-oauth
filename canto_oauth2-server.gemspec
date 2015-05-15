@@ -15,9 +15,9 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib", "bin"]
   gem.version       = '0.0.1'
 
-  gem.add_dependency 'sinatra'
-  gem.add_dependency 'json'
-  gem.add_dependency 'uuidtools'
-  gem.add_dependency 'pg'
-  gem.add_dependency 'sequel'
+  gem.add_dependency 'sinatra', '~> 1.4', '>= 1.4.6'
+  gem.add_dependency 'json', '~> 1.8', '>= 1.8.2'
+  gem.add_dependency 'uuidtools', '~> 2.1', '>= 2.1.5'
+  gem.add_dependency 'mysql2', '~> 0.3', '>= 0.3.8'
+  gem.add_dependency 'sequel', '~> 4.22'
 end
