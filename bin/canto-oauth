@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+require 'rack'
+
+begin
+  path = File.expand_path('../../config.ru', __FILE__)
+  system "thin -R #{path} -P tmp/pids/oauth.pid -p 9292 -d start"
+rescue LoadError => e
+  require 'rubygems'
+  path = File.expand_path('../../', __FILE__)
+  $:.unshift(path) if File.directory?(path) && !$:.include?(path)
+  system "thin -R #{path} -P tmp/pids/oauth.pid -p 9292 -d start"
+end
