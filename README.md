@@ -1,2 +1,2 @@
-# canto-oauth
-OAuth authentication server for Canto Career Management
+# Canto-OAuth
+This repository contains code for the OAuth 2.0 authentication server for the (Canto Career Management)[http://github.com/danascheider/canto] (app)[http://github.com/danascheider/canto-front-end].
