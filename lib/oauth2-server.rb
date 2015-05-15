@@ -6,7 +6,7 @@ require 'sequel'
 
 require_relative "./oauth2-server/authorization_server"
 
-OAUTH2_DB_URL = ENV['OAUTH2_DB_URL'] || 'mysql2://oauth-server:hunter2@localhost:3306/oauth'
+OAUTH2_DB_URL = ENV['OAUTH2_DB_URL'] || 'mysql2://oauth-server:chl*friaCRl9triUtHIe@localhost:3306/oauth'
 
 if ENV['OAUTH2_DB_URL']
   Sequel.connect ENV['OAUTH2_DB_URL'] 
