@@ -20,4 +20,5 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'uuidtools', '~> 2.1', '>= 2.1.5'
   gem.add_dependency 'mysql2', '~> 0.3', '>= 0.3.8'
   gem.add_dependency 'sequel', '~> 4.22'
+  gem.add_dependency 'thin', '~> 1.6', '>= 1.6.3'
 end
